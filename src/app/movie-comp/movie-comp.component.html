@@ -1,0 +1,15 @@
+<body>
+  <div class="container" *ngFor="let i of movies">
+    <img class="image-container" src="{{ i.poster }}" alt="{{ i.name }}" />
+    <h4>
+      {{ i.name }}
+      <span style="float: right">⭐{{ i.rating }}</span>
+    </h4>
+    <!-- <p style="text-align: justify;">{{i.summary}}</p> -->
+    <!-- <button (click)="toggle()" >{{buttonName}}</button> -->
+    <button mat-raised-button (click)="toggle()">
+      {{ show ? "hide" : "show" }}
+    </button>
+    <p *ngIf="show">{{ i.summary }}</p>
+  </div>
+</body>

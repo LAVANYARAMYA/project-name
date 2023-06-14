@@ -33,19 +33,7 @@ export class CountryComponent {
      });
 
 
-    // this.searchForm
-    //  .get('searchField')
-    //  ?.valueChanges.pipe(
-    //   debounceTime(500),
-    //   distinctUntilChanged(),
-    //   switchMap((val)=>
-    //   interval(10000).pipe(switchMap((n)=>this.search(val as string))))
-      
-    //  )
-    //  .subscribe((value:any)=>
-    //  {
-    //   this.countries=value;
-    //  });
+  
 
      
 

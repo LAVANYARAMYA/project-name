@@ -11,6 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { CountryComponent } from './country/country.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StockRateComponent } from './stock-rate/stock-rate.component';
+import { NewsComponent } from './news/news.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { StockRateComponent } from './stock-rate/stock-rate.component';
     MovieCompComponent,
     LikeDislikeComponent,
     CountryComponent,
-    StockRateComponent
+    StockRateComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

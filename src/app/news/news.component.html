@@ -1,0 +1,25 @@
+<form [formGroup]="searchForm">
+    <div class="drop-down">
+    <select placeholder="search Country..." formControlName="country">
+        <option>in</option>
+        <option>br</option>
+        <option>us</option>
+    </select>
+
+    <!-- <select placeholder="search Category..." formControlName="category">
+        <option>business</option>
+        <option>entertainment</option>
+        <option>general</option>
+    </select> -->
+</div>
+ </form>
+ <p *ngFor="let i of countries">
+    {{i.title}}
+ </p>
+ 
+ <!-- <ul>
+     <li *ngFor="let country of countries">
+            {{country?.name?.common}}
+     </li>
+ 
+ </ul> -->
